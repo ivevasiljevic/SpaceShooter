@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         {
             nextShot = Time.time + shotRate;
             Instantiate(projectile, transform.position + new Vector3(0.0f, 0.0f, 1.25f), Quaternion.identity);
+            GetComponent<AudioSource>().Play();
         } 
     }
 
